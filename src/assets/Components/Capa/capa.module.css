@@ -1,0 +1,97 @@
+.capa {
+
+    position: absolute; 
+    top: 20px;
+    left: 10px;
+    width: 80%;
+    height: 94vh;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.capa::after {
+
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        transparent 50%,
+        rgba(0, 0, 0, 0.3) 90%,
+        rgba(0, 0, 0, 0.8) 100%,
+        #000 100%
+    );
+    z-index: 1;
+}
+
+.imagem {
+
+    width: 100%;
+    height: 100%;
+    -webkit-mask-image: linear-gradient(
+        to right,
+        black 70%,
+        transparent 100%
+    );
+
+    mask-image: linear-gradient(
+        to right,
+        rgb(0, 0, 0) 70%,
+        transparent 100%
+    );
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+}
+ 
+
+
+@media (max-width: 480px) {
+
+.capa {
+
+    top: 12px;
+    width: 100%;
+    height: 100vh;
+}
+
+.capa::after {
+
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        transparent 50%,
+        rgba(0, 0, 0, 0.3) 100%,
+        rgba(0, 0, 0, 0.8) 100%,
+        #000 100%
+    );
+    z-index: 1;
+}
+
+.imagem {
+
+    width: 100%;
+    height: 75vh;
+    -webkit-mask-image: linear-gradient(
+        to right,
+        black 90%,
+        transparent 100%
+    );
+
+    mask-image: linear-gradient(
+        to right,
+        rgb(0, 0, 0) 90%,
+        transparent 100%
+    );
+}
+
+}
