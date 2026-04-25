@@ -119,3 +119,19 @@
 }
 
 }
+
+@media (max-width: 380px){
+
+    .link {
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    padding: 10px 0;
+
+
+}
+    .nav {
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+
+}
