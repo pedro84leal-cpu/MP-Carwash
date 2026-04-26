@@ -1,7 +1,7 @@
 import lavagem from '../../Images/lavagens.webp'
 import polimentos from '../../Images/polimentos.webp'
 import detail from '../../Images/detail.webp'
-import styles from '../Botões-interativos/botões.module.css'
+import styles from './botoes.module.css'
 
 
 function Botoes(){
