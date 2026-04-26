@@ -1,5 +1,5 @@
 import Menu from '../Menu/Menu'
-import styles from '../Reservas/reservas.moduele.css'
+import styles from '../Reservas/reservas.module.css'
 
 function Reservas() {
   return (
