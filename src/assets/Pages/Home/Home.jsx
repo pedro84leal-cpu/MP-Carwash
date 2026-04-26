@@ -1,11 +1,10 @@
-import Menu from "../../Components/Menu/Menu"
-
+import Capa from '../../Components/Capa/capa'
 
 
 function Home(){
     return(
         <>
-            <Menu />
+            <Capa />
         </>
     )
 }

@@ -1,0 +1,85 @@
+.botoes {
+
+    position: absolute;
+    top: 430px;
+    left: 100px;
+    display: flex; 
+    gap: 24px;              
+    width: auto;
+    padding-top: 10px;
+    z-index: 12;             
+}
+
+
+
+.navLink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden; /* Essencial para o efeito */
+}
+
+
+.navLink::before {
+
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 183, 0, 0.5),
+        transparent
+    );
+    animation: brilho 6s infinite;
+}
+
+@keyframes brilho {
+    0% {
+        left: -100%;
+    }
+    20%, 100% {
+        left: 100%;
+    }
+}
+
+
+.navLink:hover {
+
+    transform: translatey(5px);
+}
+
+
+
+
+.botoesLink {
+
+    width: 80px;
+    height: 80px;
+    object-fit: contain;  
+    display: block;
+}
+
+.span{
+
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 5px;
+}
+
+.small{
+
+    font-size: 0.7rem;
+     text-transform: uppercase;
+    color: rgba(255, 183, 0, 0.696);
+    letter-spacing: 1px;
+
+}
