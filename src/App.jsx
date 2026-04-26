@@ -1,12 +1,13 @@
 import { Routes, Route } from 'react-router-dom'
 import Home from './assets/Pages/Home/Home'
-import FormMarcacao from './assets/Components/Formulario-marcacao/FormMar'
+import Reservas from './assets/Components/Reservas/reservas'
+
 
 function App() {
   return (
     <Routes>
-      <Route path='/formMarc' element={<FormMarcacao />} />
       <Route path='/' element={<Home />} />
+      <Route path='/reservas' element={<Reservas />} />
     </Routes>
   )
 }

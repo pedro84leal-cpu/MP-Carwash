@@ -1,7 +1,7 @@
 import Menu from '../Menu/Menu'
-import styles from './formMar.module.css'
+import styles from '../Reservas/reservas.moduele.css'
 
-function FormMarcacao() {
+function Reservas() {
   return (
     <>
     <Menu />
@@ -38,5 +38,5 @@ function FormMarcacao() {
   )
 }
 
-export default FormMarcacao
+export default Reservas
 
