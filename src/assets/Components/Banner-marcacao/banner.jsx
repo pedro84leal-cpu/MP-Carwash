@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import styles from '../Banner-marcação/banner.module.css';
+import styles from './banner.module.css';
 import { Link } from 'react-router-dom'
 
 function Banner() {

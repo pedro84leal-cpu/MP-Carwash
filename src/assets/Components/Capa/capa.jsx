@@ -3,7 +3,7 @@ import img from '../../Images/Por.webp'
 import logo from '../../Images/logo.webp'
 import Botoes from '../Botões-interativos/botões'
 import footer from '../../Images/footer.webp'
-import Banner from '../Banner-marcação/banner'
+import Banner from '../Banner-marcacao/banner'
 import Menu from '../Menu/Menu'
 
 

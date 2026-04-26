@@ -1,5 +1,5 @@
 import Menu from '../Menu/Menu'
-import styles from '../Formulário-marcaçao/formMar.module.css'
+import styles from './formMar.module.css'
 
 function FormMarcacao() {
   return (
