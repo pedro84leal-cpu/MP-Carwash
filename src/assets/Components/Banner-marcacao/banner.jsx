@@ -26,7 +26,7 @@ function Banner() {
         <p>Reserve em segundos - rápido e fácil</p>
       </div>
       <div>
-        <Link to="/formMarc" className={styles.botao}>
+        <Link to="/reservas" className={styles.botao}>
           Marcar agora
         </Link>
       </div>
