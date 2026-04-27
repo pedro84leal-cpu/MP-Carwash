@@ -18,7 +18,7 @@ function Menu(){
                     Pack's
                 </Link>
 
-                <Link to='/home' className={styles.link}>
+                <Link to='/galeria' className={styles.link}>
                     Galeria
                 </Link>
 

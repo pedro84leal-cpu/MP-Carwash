@@ -1,0 +1,124 @@
+/* container da geral*/
+.grid {
+
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-left: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 30;
+   
+
+
+}
+
+.ti{
+
+    color: goldenrod;
+    margin-bottom: 12px;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+
+.pi{
+
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    padding: 10px;
+    font-size: 0.9rem;
+}
+
+
+/* container do slide incluido os botoes*/
+.slideContainer {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+ 
+    
+    
+}
+
+/* container que involve a imagem*/
+.slideImageWrapper {
+
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+}
+
+/* container da imagem*/
+.slideImage {
+
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 1px 5px goldenrod;
+    border: 3px solid rgb(1, 19, 33)
+}
+
+.counter {
+
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    background: goldenrod;
+    color: rgb(10, 10, 10);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.7rem;
+}
+
+.arrow {
+
+    background: rgb(235, 234, 232);
+    border: none;
+    font-size: 24px;
+    width: 20px;
+    height: 25px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow:hover {
+
+    background: #f0f0f0;
+    transform: scale(1.1);
+}
+
+.dots {
+
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.dot {
+
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ccc;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dot.active {
+
+    background: #007bff;
+    width: 24px;
+    border-radius: 5px;
+}

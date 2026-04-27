@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom'
 
 function Banner() {
 
-  const [visivel, setVisivel] = useState(true); // começa visível
+  const [visivel, setVisivel] = useState(false); // começa visível
 
   useEffect(() => {
     const intervalo = setInterval(() => {
       setVisivel(prev => !prev);
-    }, 10000); // alterna a cada 5 segundos
+    }, 5000); // alterna a cada 5 segundos
 
     return () => clearInterval(intervalo);
   }, []);
