@@ -1,0 +1,65 @@
+.slogan{
+
+    position: absolute;
+    top: 200px;
+    left: 190px;
+    text-transform: uppercase;
+}
+
+.textoBranco{
+
+    color: rgba(255, 255, 255, 0.851);
+    font-size: 3.2rem;
+    letter-spacing: 5px;
+    font-weight: bold;
+
+}
+
+.textoDourado{
+
+    color: rgba(255, 183, 0, 0.862);
+    font-size: 3.2rem;
+    letter-spacing: 5px;
+    padding-bottom: 10px;
+}
+
+.divisor {
+
+    position: relative;
+    border: 1px solid rgba(255, 183, 0, 0.696);
+    width: 100px;
+    left: 200px;
+}
+
+
+
+.divisor1{
+
+    border: 2px solid rgba(255, 183, 0, 0.696);
+    width: 60px;
+}
+
+.slogan2{
+
+    position: absolute;
+    top: 490px;
+    left: 190px;
+
+}
+
+.pBranco{
+
+    position: relative;
+    color: rgba(255, 255, 255, 0.851);
+    font-size: 1.6rem;
+}
+
+.pDourado{
+
+    position: relative;
+    color: rgba(255, 183, 0, 0.862);
+    font-size: 1.6rem;
+    bottom: 30px;
+    left: 205px;
+
+}

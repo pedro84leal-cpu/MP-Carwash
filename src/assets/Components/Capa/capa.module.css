@@ -1,12 +1,9 @@
 .capa {
 
     position: absolute; 
-    top: 20px;
-    left: 10px;
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background-color: #000;
 }
 
 .capa::after {
@@ -44,101 +41,6 @@
     );
 }
 
-.logo{
-
-    position: absolute;
-    top: 10px;
-    left: 250px;
-    width: 100px;
-    height: 100px;
-    z-index: 2;
-}
-
-.logoImagem{
-
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-
-.slogan{
-
-    position: absolute;
-    top: 120px;
-    left: 100px;
-    text-transform: uppercase;
-}
-
-.textoBranco{
-
-    color: rgba(255, 255, 255, 0.851);
-    font-size: 2.7rem;
-    letter-spacing: 5px;
-    font-weight: bold;
-
-}
-
-.textoDourado{
-
-    color: rgba(255, 183, 0, 0.862);
-    font-size: 2.7rem;
-    letter-spacing: 5px;
-    padding-bottom: 10px;
-}
-
-.divisor {
-
-    position: relative;
-    border: 1px solid rgba(255, 183, 0, 0.696);
-    width: 100px;
-    left: 200px;
-}
 
 
 
-.divisor1{
-
-    border: 2px solid rgba(255, 183, 0, 0.696);
-    width: 60px;
-}
-
-.slogan2{
-
-    position: absolute;
-    top: 350px;
-    left: 100px;
-
-}
-
-.pBranco{
-
-    position: relative;
-    color: rgba(255, 255, 255, 0.851);
-    font-size: 1.2rem;
-}
-
-.pDourado{
-
-    position: relative;
-    color: rgba(255, 183, 0, 0.862);
-    font-size: 1.2rem;
-    top: -22px;
-    left: 152px;
-
-}
-
-.footer{
-
-    position: absolute;
-    top: 575px;
-    left: 80px;
-    width: 750px;
-    height: 60px;
-}
-
-.footerImg{
-
-    width: 100%;
-    height: 100%;
-}

@@ -4,15 +4,43 @@ import { Link } from 'react-router-dom'
 
 function Banner() {
 
-  const [visivel, setVisivel] = useState(false); // começa visível
+const [visivel, setVisivel] = useState(false); // começa visível
 
-  useEffect(() => {
-    const intervalo = setInterval(() => {
-      setVisivel(prev => !prev);
-    }, 5000); // alterna a cada 5 segundos
+useEffect(() => {
+  let timer;
 
-    return () => clearInterval(intervalo);
+  const cicloVisibilidade = (estaVisivel) => {
+    if (estaVisivel) {
+      // Está visível, programa para ficar invisível depois de 5s
+      timer = setTimeout(() => {
+        setVisivel(false);
+      }, 5000);
+    } else {
+      // Está invisível, programa para ficar visível depois de 3s
+      timer = setTimeout(() => {
+        setVisivel(true);
+      }, 3000);
+    }
+  };
+
+  // Inicia o primeiro ciclo (começa visível)
+  cicloVisibilidade(true);
+
+    return () => clearTimeout(timer);
   }, []);
+
+  // Este useEffect observa as mudanças de "visivel" para continuar o ciclo
+  useEffect(() => {
+    let timer;
+
+    if (visivel) {
+      timer = setTimeout(() => setVisivel(false), 8000);
+    } else {
+      timer = setTimeout(() => setVisivel(true), 3000);
+    }
+
+    return () => clearTimeout(timer);
+  }, [visivel]);
 
   return (
     <section

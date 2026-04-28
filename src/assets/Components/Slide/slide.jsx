@@ -1,8 +1,8 @@
 import { useState} from 'react';
 import { imagens } from '../../Pages/Galeria/data';
-import styles from '../CarouselBook/carouselBool.module.css'
+import styles from '../Slide/slide.module.css'
 
-const CarouselBook = () => {
+const Slide = () => {
 
     const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -66,4 +66,4 @@ const CarouselBook = () => {
 };
   
 
-export default CarouselBook;
+export default Slide;

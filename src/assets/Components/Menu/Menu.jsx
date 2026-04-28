@@ -23,6 +23,10 @@ function Menu(){
                 </Link>
 
                 <Link to='/home' className={styles.link}>
+                    Reservas
+                </Link>
+
+                <Link to='/home' className={styles.link}>
                     Contato
                 </Link>
             </nav>
