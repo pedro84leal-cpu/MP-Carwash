@@ -1,23 +1,23 @@
-
 .formMar {
 
     display: flex;
     flex-direction: column;
     gap: 20px;
-    max-width: 420px;
+    max-width: 520px;
     width: 100%;
-    margin: 40px auto;
+    margin-top: 120px;
+    margin-left: 700px;
     padding: 32px 28px;
     background-color: #181f2a;
-    border: 1px solid rgba(218, 165, 32, 0.4);
-    border-radius: 16px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(1, 26, 57, 0.858);
+    border-radius: 18px;
+    box-shadow: 1px 1px 15px 0px goldenrod;
 }
 
 .titulo {
 
     color: white;
-    font-size: 1.4rem;
+    font-size: 2rem;
     font-weight: 700;
     margin: 0 0 4px 0;
     text-align: center;
@@ -33,14 +33,14 @@
 .campo label {
 
     color: #cbd5e1;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     font-weight: 500;
 }
 
 .campo input {
 
     padding: 12px 16px;
-    font-size: 0.95rem;
+    font-size: 1rem;
     color: white;
     background-color: #8b94a7;
     border: 1px solid #334155;
@@ -66,7 +66,7 @@
     padding: 14px 0;
     width: 100%;
 
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: #0f172a;
     background-color: goldenrod;
@@ -91,7 +91,7 @@
 .campo select {
 
     padding: 12px 16px;
-    font-size: 0.95rem;
+    font-size: 1.2rem;
     color: white;
     background-color: #0f172a;
     border: 1px solid #334155;
@@ -116,8 +116,9 @@
 
 .campo input[type="date"],
 .campo input[type="time"] {
+
     padding: 12px 16px;
-    font-size: 0.95rem;
+    font-size: 1.2rem;
     color: rgb(0, 14, 25);
     background-color: #8e96a8;
     border: 1px solid #334155;
@@ -129,6 +130,7 @@
 
 .campo input[type="date"]:focus,
 .campo input[type="time"]:focus {
+
   border-color: goldenrod;
   box-shadow: 0 0 0 3px rgba(218, 165, 32, 0.15);
 }

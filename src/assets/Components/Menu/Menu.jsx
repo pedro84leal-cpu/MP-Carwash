@@ -14,7 +14,7 @@ function Menu(){
                     Home
                 </Link>
 
-                <Link to='/home' className={styles.link}>
+                <Link to='/paks' className={styles.link}>
                     Pack's
                 </Link>
 

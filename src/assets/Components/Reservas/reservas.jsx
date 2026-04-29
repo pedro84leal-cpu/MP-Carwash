@@ -89,6 +89,7 @@ function Reservas() {
     <Basico />
     <Standard />
     <Premium />
+    
     </>
   )
 }

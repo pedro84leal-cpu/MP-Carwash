@@ -8,18 +8,18 @@ function Basico(){
             <h1 className={styles.basicoTitulo}>
                 Pack Básico
             </h1>
-            <h2>
+            <h2 className={styles.basicoH2}>
                 Para quem quer o carro limpo no dia a dia!
             </h2>
             <ul>            
-                <li>Lavagem exterior manual</li>
-                <li>Secagem com microfibra</li>
-                <li>Limpeza de jantes</li>
-                <li>Aspiração interior rápida</li>
-                <li>Limpeza de plásticos (superficial)</li>
-                <li>Limpeza de vidros</li>
+                <li className={styles.basicoLi}>Lavagem exterior manual</li>
+                <li className={styles.basicoLi}>Secagem com microfibra</li>
+                <li className={styles.basicoLi}>Limpeza de jantes</li>
+                <li className={styles.basicoLi}>Aspiração interior rápida</li>
+                <li className={styles.basicoLi}>Limpeza de plásticos (superficial)</li>
+                <li className={styles.basicoLi}>Limpeza de vidros</li>
             </ul>
-            <p>
+            <p className={styles.basicoP}>
                 💰 Preço: 10€ {'/'}⏱️ Tempo: 30 a 45 min
             </p>   
 
