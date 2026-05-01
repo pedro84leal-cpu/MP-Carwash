@@ -1,18 +1,15 @@
 .capa {
 
-    position: absolute; 
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    z-index: 0;
 }
-
-
 
 .imagem {
 
-    width: 80%;
-    height: 100%;
-    -webkit-mask-image: linear-gradient(
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+      -webkit-mask-image: linear-gradient(
         to right,
         black 50%,
         transparent 100%
@@ -22,9 +19,7 @@
         to right,
         rgb(0, 0, 0) 50%,
         transparent 100%
-    );
+    ); 
 }
-
-
 
 

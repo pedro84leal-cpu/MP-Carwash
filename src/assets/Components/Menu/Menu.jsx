@@ -14,16 +14,16 @@ function Menu(){
                     Home
                 </Link>
 
-                <Link to='/paks' className={styles.link}>
-                    Pack's
+                <Link to='/servicos' className={styles.link}>
+                    Serviços
                 </Link>
 
                 <Link to='/galeria' className={styles.link}>
                     Galeria
                 </Link>
 
-                <Link to='/home' className={styles.link}>
-                    Reservas
+                <Link to='/home' className={styles.link} style={{color:'goldenrod'}}>
+                    Reservar
                 </Link>
 
                 <Link to='/home' className={styles.link}>

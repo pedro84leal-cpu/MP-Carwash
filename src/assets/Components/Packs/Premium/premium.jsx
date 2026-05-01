@@ -1,30 +1,43 @@
-import styles from '../Premium/premium.module.css'
+import styles from '../../Packs/packs.module.css'
 
 
-function Premium(){
+function Premium({className}){
     return(
         <>
-        <div className={styles.premium}>
-            <h1 className={styles.premiumTitulo}>
+        <div className={`${styles.content} ${className}`}>
+            <p style={{color:'goldenrod', fontWeight:'bold'}}>
+                GT Carwash
+            </p> 
+            <h1 className={styles.Titulo}>
                 💎Pack Premium💎
             </h1>
-            <h2 className={styles.premiumH2}>
-                Para quem quer o carro como novo!
-            </h2>
-            <ul className={styles.premiumUl}>            
-                <li className={styles.premiumLi}>Tudo do Pack Standard</li>
-                <li className={styles.premiumLi}>Descontaminação da pintura</li>
-                <li className={styles.premiumLi}>Polimento (ligeiro ou 1 etapa)</li>
-                <li className={styles.premiumLi}>Tratamento de pneus (brilho)</li>
-                <li className={styles.premiumLi}>Limpeza profunda de estofos (tecido ou pele)</li>
-                <li className={styles.premiumLi}>Proteção de pintura (cera ou selante)</li>
-                <li className={styles.premiumLi}>Detalhe de zonas difíceis (grelhas, emblemas, etc.)</li>
+            <p className={styles.Preco}>
+                €60,00 
+            </p>
+
+            <p style={{color:'white'}}>
+                O que está incluído:
+            </p>
+          
+            <ul className={styles.Ul}>            
+                <li className={styles.LiCheck}>Lavagem exterior manual</li>
+                <li className={styles.LiCheck}>Limpeza profunda do interior</li>
+                <li className={styles.LiCheck}>Tratamento de plásticos (hidratação)</li>
+                <li className={styles.LiCheck}>Limpeza profunda de estofos (tecido ou pele) </li>
+                <li className={styles.LiCheck}>Colocação de cera de proteção da pintura</li>
+                <li className={styles.LiCheck}>Descontaminação da pintura</li>
+                <li className={styles.LiCheck}>Polimento retificador</li>
+                <li className={styles.LiCheck}>Tratamento de pneus (brilho) e jantes</li>
+                <li className={styles.LiCheck}>Ambientador à escolha do cliente</li>
+                <li className={styles.LiCheck}>Polimento de farois</li>
+                <li className={styles.LiCheck}>Detalhe de zonas difíceis (grelhas, emblemas, etc.)</li>
             </ul>
-            <p className={styles.premiumP}>
-                💰 Preço: 60€ {'/'}⏱️ Tempo: 3h a 6h min
-            </p>   
-
-
+            <p className={styles.p}>
+                ⏱️ Tempo: 3h a 6h min
+            </p>
+            <button className={styles.Botao}>
+                Reservar
+            </button>    
         </div>
         </>
 

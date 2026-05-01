@@ -147,3 +147,31 @@
 .campo input[type="time"]:hover::-webkit-calendar-picker-indicator {
   filter: invert(1) sepia(1) saturate(5) hue-rotate(10deg);  /* tom dourado */
 }
+
+
+
+.basicoPageReservas{
+
+    position: absolute;
+    top: 120px;
+    left: 80px;
+    background-color: #02172c7f;
+    border-radius: 12px;
+}
+
+
+.standardPageReservas{
+
+
+    position: absolute;
+    top: 520px;
+    left: 80px;
+}
+
+
+.premiumPageReservas{
+
+    position: absolute;
+    top: 120px;
+    right: 80px;
+}

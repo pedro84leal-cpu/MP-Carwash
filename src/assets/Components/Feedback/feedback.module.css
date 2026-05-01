@@ -1,19 +1,22 @@
 .feedbackBanner {
 
-    position: absolute;
+    position: relative;
+    display: flex;
+    flex-direction: column;
     top: 80px;
-    right: 90px;
-    background: rgba(1, 86, 156, 0.122);
-    padding: 10px 10px;
-    text-align: center;
-    color: goldenrod;
-    border-radius: 80px;
+    align-items: center;
+    margin: 20px;
+    width: 600px;
+    padding: 10px;
+    border-radius: 40px;
+    box-shadow: 0px 2px 8px 5px rgba(0, 0, 0, 0.159);
 }
 
 .feedbackTitle {
 
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
+    color: goldenrod;
 }
 
 .feedbackCarousel {
@@ -22,12 +25,11 @@
     align-items: center;
     justify-content: center;
     gap: 5px;
-    max-width: 800px;
 }
 
 .feedbackCard {
 
-    color: #fffefe;
+    color: #060606;
     padding: 5px;
     min-width: 500px;
     overflow-wrap: break-word;
@@ -39,25 +41,17 @@
   transform: translateY(-5px);
 }
 
-.clientPhoto {
-
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    margin-bottom: 15px;
-    border: 3px solid #667eea;
-}
 
 .stars {
 
   color: #ffd700;
-  font-size: 1.5rem;
-  margin-bottom: 5px;
+  font-size: 1.8rem;
+  padding: 10px;
 }
 
 .feedbackText {
 
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.6;
   font-style: italic;
   margin-bottom: 15px;
@@ -95,8 +89,8 @@
     
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
+    gap: 5px;
+    margin-top: 1px;
 }
 
 .dot {

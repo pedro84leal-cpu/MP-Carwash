@@ -4,14 +4,17 @@
     align-items: center;
     flex-direction: column;
     gap: 15px;
-    position: absolute;
-    top: 120px;
-    right: 80px;
     padding: 10px 37px;
     background-color: #02172c7f;
     border: 1px solid goldenrod;
     border-radius: 12px;
 }
+
+
+
+
+
+
 
 .premiumTitulo {
 

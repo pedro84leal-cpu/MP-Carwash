@@ -3,7 +3,6 @@
     position: relative;
     width: 100%;
     min-height: 100vh;
-    /*para fazer scrool*/
     max-height: 80vh;     
     overflow-y: auto;
 }
@@ -32,7 +31,7 @@
     position: absolute;
     display: grid;
     width: 90%;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     top: 100px;
     left: 50px;
@@ -60,6 +59,7 @@
 
 .imagem2Basico{
 
+    position: relative;
     width: 350px;
     border-radius: 20px;
     margin-right: 60px;
@@ -69,6 +69,7 @@
 
 .imagem3Basico{
 
+    position: relative;
     width: 350px;
     border-radius: 20px;
     border: 1px solid white;
@@ -82,11 +83,7 @@
 }
 
 
-.gridB{
 
-    color: white;
-    
-}
 
 .desBasico{
 
@@ -115,6 +112,26 @@
     width: 100%;
     height: auto;
     max-width: 200px;
+    border: 1px solid rgb(206, 187, 15);
+
+}
+
+.gridB{
+
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    color: white;
+    border: 1px solid rgb(23, 11, 110);
+    
+}
+
+.gridC{
+
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    border: 1px solid brown;
 
 }
 

@@ -86,9 +86,9 @@ function Reservas() {
         Marcar
       </button>
     </form>
-    <Basico />
-    <Standard />
-    <Premium />
+    <Basico className={styles.basicoPageReservas} />
+    <Standard className={styles.standardPageReservas} />
+    <Premium className={styles.premiumPageReservas} />
     
     </>
   )

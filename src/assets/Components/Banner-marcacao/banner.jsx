@@ -49,13 +49,13 @@ useEffect(() => {
       <div className={styles.texto}>
         <h2>
           Faça já a sua{' '}
-          <span className={styles.textoDourado}>marcação!</span>
+          <span className={styles.textoDourado}>Reserva!</span>
         </h2>
         <p>Reserve em segundos - rápido e fácil</p>
       </div>
       <div>
         <Link to="/reservas" className={styles.botao}>
-          Marcar agora
+          Reserve já
         </Link>
       </div>
     </section>

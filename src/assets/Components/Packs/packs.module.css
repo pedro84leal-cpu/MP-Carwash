@@ -1,4 +1,4 @@
-.quadrado{
+.content{
 
     display: flex;
     align-items: center;
@@ -11,7 +11,7 @@
 
 
 
-.basicoTitulo {
+.Titulo {
 
     font-size: 2rem;
     color: white
@@ -19,7 +19,7 @@
 
 
 
-.ulBasico{
+.ul{
 
     display: flex;
     flex-direction: column;
@@ -29,21 +29,21 @@
 }
 
 
-.basicoLiCheck{
+.LiCheck{
     
     line-height: 2.5;
     color: white;
     font-size: 1.1rem;
 }
 
-.basicoLiCheck::before {
+.LiCheck::before {
 
     content: "✔  ";
     padding-right: 10px;
     color: rgb(2, 205, 2); 
 }
 
-.basicoLi {
+.Li {
 
     line-height: 2.5;
     color: rgba(227, 219, 219, 0.604);
@@ -51,7 +51,7 @@
     list-style: none; 
 }
 
-.basicoLi::before {
+.Li::before {
 
     content: "𐄂 "; 
     padding-right: 10px;
@@ -60,7 +60,7 @@
 
 
 
-.basicoPreco{
+.Preco{
 
     margin-top: 5px;
     color: goldenrod;
@@ -69,7 +69,7 @@
 }
 
 
-.basicoP{
+.p{
 
     margin-top: 10px;
     color: goldenrod;
@@ -78,7 +78,7 @@
 
 
 
-.basicoBotao {
+.Botao {
 
     background-color: goldenrod;
     color: #080808;
@@ -92,7 +92,7 @@
     white-space: nowrap;    
 }
 
-.basicoBotao:hover {
+.Botao:hover {
 
   background-color: #facc15;
 }

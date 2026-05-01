@@ -6,8 +6,8 @@ function Capa() {
     return (
         <>
         <div className={styles.capa}>
-            <picture>
-                <img src={img} alt="Capa" className={styles.imagem} />
+            <picture >
+                <img src={img} alt="Capa" className={styles.imagem}  />
             </picture>
         </div>
        </>

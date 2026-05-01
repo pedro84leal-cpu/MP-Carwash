@@ -4,14 +4,13 @@
     align-items: center;
     flex-direction: column;
     gap: 15px;
-    position: absolute;
-    top: 520px;
-    left: 80px;
     padding: 10px 37px;
     background-color: #02172c7f;
     border: 1px solid goldenrod;
     border-radius: 12px;
 }
+
+
 
 .standardTitulo {
 
@@ -19,10 +18,13 @@
     color: white
 }
 
-.standardH2{
+.ulBasico{
 
-    color: goldenrod;
-    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 15px;
+    list-style: none;
 }
 
 

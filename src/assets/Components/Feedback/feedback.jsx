@@ -24,7 +24,9 @@ const Feedback = () => {
 
   return (
     <div className={styles.feedbackBanner}>
-      <h2 className={styles.feedbackTitle}>O que os nossos clientes dizem </h2>
+      <h2 className={styles.feedbackTitle}>
+        O que os nossos clientes dizem 
+      </h2>
       
       <div className={styles.feedbackCarousel}>
         <button className={styles.navButton} onClick={prevSlide}>
