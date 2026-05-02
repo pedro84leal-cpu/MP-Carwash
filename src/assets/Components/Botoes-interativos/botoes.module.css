@@ -50,7 +50,7 @@
 
 .navLink:hover {
 
-    transform: translatey(5px);
+    transform: translatey(-5px);
 }
 
 

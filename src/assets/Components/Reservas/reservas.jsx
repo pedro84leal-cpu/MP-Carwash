@@ -1,7 +1,3 @@
-import Menu from '../Menu/Menu'
-import Basico from '../Packs/Basico/basico';
-import Premium from '../Packs/Premium/premium';
-import Standard from '../Packs/Standard/standard';
 import styles from '../Reservas/reservas.module.css'
 import { useState} from 'react';
 
@@ -14,14 +10,12 @@ function Reservas() {
 
   return (
     <>
-    <Menu />
+    <div className={styles.formulario}>
     <form className={styles.formMar}>
       <h2 className={styles.titulo}>
-        Reserva
+        Formulário de Reserva 
       </h2>
-
       <div className={styles.campo}>
-        <label htmlFor="name">Nome</label>
         <input
           type="text"
           name="name"
@@ -32,7 +26,6 @@ function Reservas() {
       </div>
 
       <div className={styles.campo}>
-        <label htmlFor="email">Contacto</label>
         <input
           type="email"
           name="email"
@@ -43,7 +36,6 @@ function Reservas() {
       </div>
       
       <div className={styles.campo}>
-        <label htmlFor="pack">Escolha o pack</label>
           <select
           name="pack"
           id="pack"
@@ -83,13 +75,10 @@ function Reservas() {
       </div>
 
       <button type="submit" className={styles.botao}>
-        Marcar
+        Reservar
       </button>
     </form>
-    <Basico className={styles.basicoPageReservas} />
-    <Standard className={styles.standardPageReservas} />
-    <Premium className={styles.premiumPageReservas} />
-    
+    </div>
     </>
   )
 }

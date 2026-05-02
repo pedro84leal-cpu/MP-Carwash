@@ -1,8 +1,15 @@
 import { useState, useEffect } from 'react';
 import styles from './banner.module.css';
-import { Link } from 'react-router-dom'
+import Reservas from '../Reservas/reservas';
+import Modal from '../Modal/modal';
 
 function Banner() {
+
+const [reservasAberto, setReservasAberto] = useState(false);
+
+const abrirReservas = () => {
+  setReservasAberto(true);
+};
 
 const [visivel, setVisivel] = useState(false); // começa visível
 
@@ -43,9 +50,9 @@ useEffect(() => {
   }, [visivel]);
 
   return (
+    <>
     <section
-      className={`${styles.tela} ${visivel ? styles.visivel : styles.escondido}`}
-    >
+      className={`${styles.tela} ${visivel ? styles.visivel : styles.escondido}`}>
       <div className={styles.texto}>
         <h2>
           Faça já a sua{' '}
@@ -54,11 +61,17 @@ useEffect(() => {
         <p>Reserve em segundos - rápido e fácil</p>
       </div>
       <div>
-        <Link to="/reservas" className={styles.botao}>
+        <span  className={styles.botao} onClick={abrirReservas}>
           Reserve já
-        </Link>
+        </span>
       </div>
     </section>
+      {reservasAberto && (                                   // Só mostra se o estado for true
+            <Modal onClose={() => setReservasAberto(false)}>   {/* Passa a função de fechar */}
+                <Reservas/> 
+            </Modal>
+      )}
+    </>
   );
 }
 

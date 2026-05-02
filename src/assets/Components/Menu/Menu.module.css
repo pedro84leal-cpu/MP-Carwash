@@ -27,6 +27,7 @@
     gap: 50px;
 }
 
+
 .link {
 
     position: relative;
@@ -131,5 +132,4 @@
         gap: 25px;
         flex-wrap: wrap;
     }
-
 }
