@@ -20,16 +20,13 @@ function Menu(){
         <div className={styles.menu}>
         
             <nav className={styles.nav}>
-                <Link to='/' className={styles.link}>
-                    GTCarwsh
+                <Link to='/' className={styles.link}
+                    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                        GTCarwash
                 </Link>
 
                 <Link to='/servicos' className={styles.link}>
                     Serviços
-                </Link>
-
-                <Link to='/galeria' className={styles.link}>
-                    Galeria
                 </Link>
 
                 <Link to='/home' className={styles.link} >

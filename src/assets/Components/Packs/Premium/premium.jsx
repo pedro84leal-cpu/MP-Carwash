@@ -1,17 +1,10 @@
+import BotaoReservar from '../../BotaoReservar/botaoR'
 import styles from '../../Packs/packs.module.css'
-import { useState } from 'react';
-import Reservas from '../../Reservas/reservas';
-import Modal from '../../Modal/modal';
+
 
 
 
 function Premium({className}){
-
-    const [reservasAberto, setReservasAberto] = useState(false);
-
-    const abrirReservas = () => {
-    setReservasAberto(true);
-    };
 
     return(
         <>
@@ -46,16 +39,9 @@ function Premium({className}){
             <p className={styles.p}>
                 ⏱️ Tempo: 3h a 6h min
             </p>
-            <button className={styles.Botao} onClick={abrirReservas}>
-                Reservar
-            </button>    
+            <BotaoReservar />
         </div>
 
-         {reservasAberto && (                                   // Só mostra se o estado for true
-            <Modal onClose={() => setReservasAberto(false)}>   {/* Passa a função de fechar */}
-                <Reservas/> 
-            </Modal>
-        )}
 
         </>
 

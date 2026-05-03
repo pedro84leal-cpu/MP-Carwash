@@ -1,16 +1,9 @@
+import BotaoReservar from '../../BotaoReservar/botaoR'
 import styles from '../../Packs/packs.module.css'
-import { useState } from 'react';
-import Reservas from '../../Reservas/reservas';
-import Modal from '../../Modal/modal';
+
 
 
 function Standard({className}){
-
-    const [reservasAberto, setReservasAberto] = useState(false);
-    
-        const abrirReservas = () => {
-        setReservasAberto(true);
-        };
 
     return(
         <>
@@ -46,17 +39,8 @@ function Standard({className}){
             <p className={styles.p}>
                 ⏱️ Tempo: 1h a 1h:30min
             </p>
-            <button className={styles.Botao} onClick={abrirReservas}>
-                Reservar
-            </button>   
+            <BotaoReservar /> 
         </div>
-
-         {reservasAberto && (                                   // Só mostra se o estado for true
-            <Modal onClose={() => setReservasAberto(false)}>   {/* Passa a função de fechar */}
-                <Reservas/> 
-            </Modal>
-        )}
-
         </>
 
     )

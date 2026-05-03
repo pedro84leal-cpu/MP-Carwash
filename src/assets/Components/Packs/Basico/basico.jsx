@@ -1,15 +1,9 @@
 import styles from '../../Packs/packs.module.css'
-import { useState } from 'react';
-import Reservas from '../../Reservas/reservas';
-import Modal from '../../Modal/modal';
+import BotaoReservar from '../../BotaoReservar/botaoR';
 
 function Basico({className}){
 
-    const [reservasAberto, setReservasAberto] = useState(false);
-    
-        const abrirReservas = () => {
-        setReservasAberto(true);
-        };
+
     return(
         <>
          <div className={`${styles.content} ${className}`}>
@@ -44,15 +38,8 @@ function Basico({className}){
             <p className={styles.p}>
                 ⏱️ Tempo: 30 a 45 min
             </p>
-            <button className={styles.Botao} onClick={abrirReservas}>
-                Reservar
-            </button>   
+            <BotaoReservar />
         </div>
-        {reservasAberto && (                                   // Só mostra se o estado for true
-            <Modal onClose={() => setReservasAberto(false)}>   {/* Passa a função de fechar */}
-                <Reservas/> 
-            </Modal>
-        )}
         </>
 
     )
