@@ -1,8 +1,8 @@
 import styles from '../Menu/Menu.module.css'
-import {Link} from 'react-router-dom'
 import { useState } from 'react';
 import Reservas from '../Reservas/reservas'
 import Modal from '../Modal/modal'
+import { NavLink } from 'react-router-dom'
 
 
 
@@ -20,22 +20,22 @@ function Menu(){
         <div className={styles.menu}>
         
             <nav className={styles.nav}>
-                <Link to='/' className={styles.link}
+                <NavLink to='/' className={({ isActive }) => isActive ? styles.linkAtivo : styles.link}
                     onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                         GTCarwash
-                </Link>
+                </NavLink>
 
-                <Link to='/servicos' className={styles.link}>
+                <NavLink to='/servicos' className={({ isActive }) => isActive ? styles.linkAtivo : styles.link}>
                     Serviços
-                </Link>
+                </NavLink>
 
-                <Link to='/home' className={styles.link} >
+                <NavLink to='/sobre' className={({ isActive }) => isActive ? styles.linkAtivo : styles.link} >
                     Sobre Nós
-                </Link>
+                </NavLink>
 
-                <Link to='/home' className={styles.link}>
+                <NavLink to='/contato' className={({ isActive }) => isActive ? styles.linkAtivo : styles.link} >
                      Contactos
-                </Link>
+                </NavLink>
 
                 <span className={styles.link} 
                     style={{color:'black', border:'1px solid goldenrod', 
